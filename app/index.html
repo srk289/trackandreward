@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -18,26 +18,25 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
+    <header class="masthead clearfix">
+     <div class="inner">
+       <h3 class="masthead-brand text-muted"> <img src="images/logo.png" alt=""></h3>
+       <nav>
+         <ul class="nav masthead-nav">
           <li class="active"><a ng-href="#/">Home</a></li>
           <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">trackandreward</h3>
-      </div>
-
-      <div ng-view=""></div>
-
-      <div class="footer">
-        <!-- <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p> -->
-      </div>
+          <li><a ng-href="#/contact">Contact</a></li>
+         </ul>
+       </nav>
+     </div>
+    </header>
+    <div ng-view=""></div>
+    <div class="mastfoot">
+     <div class="inner">
+       <p>Copyrights <a href="#">Track and Reward</a>, by <a href="#">@srk289</a>.</p>
+     </div>
     </div>
-
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
