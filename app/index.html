@@ -19,24 +19,30 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Add your site or application content here -->
-    <header class="masthead clearfix">
-     <div class="inner">
-       <h3 class="masthead-brand text-muted"> <img src="images/logo.png" alt=""></h3>
-       <nav>
-         <ul class="nav masthead-nav">
-          <li class="active"><a ng-href="#/">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#/contact">Contact</a></li>
-         </ul>
-       </nav>
+    <header class="row">
+     <div class="container">
+      <div class='col-xs-12'>
+         <!-- <h3 class="text-hide pull-left"> <img src="images/logo.png" alt=""> Track and Reward</h3>
+         --> 
+         <img class="logo" src="images/logo.png" alt="">
+         <nav class='pull-right'>
+           <ul class="nav navbar-nav">
+            <li class="active"><a ng-href="#/">Home</a></li>
+            <li><a ng-href="#/about">About</a></li>
+            <li><a ng-href="#/contact">Contact</a></li>
+           </ul>
+         </nav>
+       </div>
      </div>
     </header>
+    
     <div ng-view=""></div>
-    <div class="mastfoot">
-     <div class="inner">
+    
+    <footer class="row">
+     <div class="container">
        <p>Copyrights <a href="#">Track and Reward</a>, by <a href="#">@srk289</a>.</p>
      </div>
-    </div>
+    </footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
