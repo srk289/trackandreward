@@ -1,0 +1,96 @@
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 5px 40px;
+  border-radius: 2px;
+}
+
+.btn-blue{
+  background: $buttonColor1;
+  color: white;
+}
+
+
+header{
+  background: $color2;
+  
+  img{
+    max-width: 150px;
+  }
+
+}
+
+footer{
+  background: $color2;
+  text-align: center; 
+  padding: 20px;
+
+  p, a{
+  color: white;
+  }
+
+}
+
+.welcome{
+  background: $color1;
+  text-align: center;
+  color: white;
+  padding: 0px 0 20px 0px;
+
+  h3{
+    font-size: 2em;
+    font-family: $westonReg;
+  }
+  ul{
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 10px 0;
+    /*@include fontRaleway(300);*/
+    max-width: 400px;
+    text-align: left;
+    margin: 0 auto 10px auto;
+  }
+
+  li{
+    padding: 4px 0 4px 0px;    
+  }
+
+  .glyphicon{
+    margin-right: 20px;
+  }
+}
+
+.information{
+  
+  padding: 10px 0;
+  h4{
+    @include fontRaleway(600);
+  }
+  ul{
+
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+  blockquote{
+    float: left;
+    text-align: center;
+    font-family: $nexaLight;
+    font-size: 2em;
+    color: $color1;
+    border: 0;
+    width: 100%;
+  }
+  
+}
+
+.blog{
+   
+    p{
+      color: $color1;
+    }
+  }
+
+.slider{
+  background: $color3 url(/images/whitebg.png) repeat-x 0 -70px;
+  padding: 10px 0;
+}

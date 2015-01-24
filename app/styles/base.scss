@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'weston_freeregular';
+    src: url('/styles/fonts/weston/weston_free-webfont.eot');
+    src: url('/styles/fonts/weston/weston_free-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/styles/fonts/weston/weston_free-webfont.woff2') format('woff2'),
+         url('/styles/fonts/weston/weston_free-webfont.woff') format('woff'),
+         url('/styles/fonts/weston/weston_free-webfont.ttf') format('truetype'),
+         url('/styles/fonts/weston/weston_free-webfont.svg#weston_freeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('/styles/fonts/nexa/nexa_light-webfont.eot');
+    src: url('/styles/fonts/nexa/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/styles/fonts/nexa/nexa_light-webfont.woff2') format('woff2'),
+         url('/styles/fonts/nexa/nexa_light-webfont.woff') format('woff'),
+         url('/styles/fonts/nexa/nexa_light-webfont.ttf') format('truetype'),
+         url('/styles/fonts/nexa/nexa_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*colors*/
+$color1: #ff742c;
+$color2: #232d3b;
+$color3: #7accc8;
+$buttonColor1: #7accc8;
+
+/*Fontfamilies*/
+$westonReg: 'weston_freeregular';
+$nexaLight: 'nexa_lightregular';
+@mixin fontRaleway($weight) {
+  font-family: "Raleway";
+  font-weight: $weight;
+} 
+
+body{
+	@include fontRaleway(400);
+	font-size: 12px;
+}
+
